@@ -75,6 +75,7 @@ section#ficha {
 
 section#ficha img.foto {
   width: 200px;
+  height: 200px;
   aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 50%;
