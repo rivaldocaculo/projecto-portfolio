@@ -80,6 +80,7 @@ section#ficha img.foto {
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid var(--fundo-card);
+  overflow: hidden;
   outline: 5px solid var(--destaque);
   display: block;
   margin: auto;
