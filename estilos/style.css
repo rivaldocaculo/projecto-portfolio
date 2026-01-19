@@ -192,10 +192,74 @@ article h2 {
   font-size: 1.1em;
 }
 
+#projecto-container  {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px ;
+}
+
+#projecto-container .projecto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--fundo-principal);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  transition: border-color 0.5s, border-width 0.5s;
+}
+
+#projecto-container .projecto:hover {
+  border-color: var(--destaque);
+  border-left-width: 15px;
+  cursor: pointer;
+}
+
+#projecto-container .foto {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px; 
+}
+
+footer {
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color: var(--texto-inverso);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: var(--destaque-inverso);
+}
+
 @media screen and (min-width: 768px) {
   #skill-container {
     grid-template-columns: 1fr 1fr;
   }
+
+  #projecto-container .projecto {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  #projecto-container .projecto-info  {
+    max-width: 80%;
+  }
+
+  #projecto-container .foto  {
+    aspect-ratio: 1/1;
+    max-width: 20%;
+    max-height: 200px;
+  }
+
 }
 
 
